@@ -16,6 +16,6 @@
     "noUnusedParameters": false,  // Suppresses unused parameters
     "types": ["node"] // Add this line
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "next.config.ts"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "next.config.js"],
   "exclude": ["node_modules", "dist"]
 }

@@ -1,7 +1,5 @@
-// next.config.ts
-import { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   reactStrictMode: true,
   webpack: (config) => {
     config.module.rules.push({
@@ -31,4 +29,4 @@ const nextConfig: NextConfig = {
   // Other Next.js config options here
 };
 
-export default nextConfig;
+module.exports = nextConfig;
