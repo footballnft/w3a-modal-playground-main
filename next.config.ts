@@ -1,10 +1,14 @@
 // next.config.ts
-
 import { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   webpack: (config) => {
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: ['@svgr/webpack'],
+    });
+
     config.resolve.alias = {
       ...config.resolve.alias,
       crypto: "empty-module",
@@ -24,7 +28,7 @@ const nextConfig: NextConfig = {
 
     return config;
   },
-  // Other Next.ts config options here
+  // Other Next.js config options here
 };
 
 export default nextConfig;
