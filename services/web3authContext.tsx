@@ -32,7 +32,6 @@ const authAdapter = new AuthAdapter({
 });
 
 const walletServicesPlugin = new WalletServicesPlugin({
-  wsEmbedOpts: {},
   walletInitOptions: {
     whiteLabel: { showWidgetButton: true, buttonPosition: BUTTON_POSITION.BOTTOM_RIGHT },
     confirmationStrategy: CONFIRMATION_STRATEGY.MODAL,
