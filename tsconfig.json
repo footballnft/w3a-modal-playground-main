@@ -11,10 +11,12 @@
     "isolatedModules": true,    // Required for Vite with TypeScript
     "module": "ESNext",         // Let Vite handle the modules
     "target": "ESNext",         // Let Vite handle the target environment
-    "jsx": "react-jsx",          // For React JSX support
-    "noUnusedLocals": false,  // Suppresses unused local variables
-    "noUnusedParameters": false,  // Suppresses unused parameters
-    "types": ["node"] // Add this line
+    "jsx": "react-jsx",         // For React JSX support
+    "noUnusedLocals": false,    // Suppresses unused local variables
+    "noUnusedParameters": false, // Suppresses unused parameters
+    "types": ["node"],
+    "allowJs": true,            // Allows JavaScript files
+    "checkJs": true             // Enables type-checking for JavaScript files
   },
   "include": ["src/**/*.ts", "src/**/*.tsx", "next.config.js"],
   "exclude": ["node_modules", "dist"]
